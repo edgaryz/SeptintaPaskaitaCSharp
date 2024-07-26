@@ -65,6 +65,10 @@ namespace SeptintaPaskaitaCSharp.Service
             {
                 Console.WriteLine(x);
             }
+
+            /* TASK 4 */
+            Console.WriteLine("TASK 4");
+
         }
     }
 }
