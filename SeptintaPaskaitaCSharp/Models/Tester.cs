@@ -2,14 +2,14 @@
 {
     public class Tester : Worker
     {
-        public bool HasExperienceInAutomatedTesting { get; set; }
+        public bool HasExperienceInAutomatedTesting { get; set; } = false;
 
         public Tester(bool hasExperienceInAutomatedTesting, string firstName, string lastName, double salary) : base(firstName, lastName, salary)
         {
             HasExperienceInAutomatedTesting = hasExperienceInAutomatedTesting;
         }
 
-        public void Experience(bool experience)
+        public void Experienced(bool experience)
         {
             HasExperienceInAutomatedTesting = experience;
         }

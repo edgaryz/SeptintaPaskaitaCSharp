@@ -36,6 +36,33 @@ namespace SeptintaPaskaitaCSharp.Service
             itTeam.Add(tester);
             foreach (var x in itTeam)
             {
+                if (x is Programmer)
+                {
+                    ((Programmer)x).Requalify("BASIC");
+                } else if (x is Tester)
+                {
+                    ((Tester)x).Experienced(true);
+                }
+
+                Console.WriteLine(x);
+            }
+
+            /* TASK 3 */
+            Console.WriteLine("TASK 3");
+            Novel novelBook1 = new Novel("Romance", "Luka", "Doncic", 2000);
+            Novel novelBook2 = new Novel("Drama", "Vika", "Doncic", 2001);
+
+            ScienceBook scienceBook1 = new ScienceBook("Math", "Steven", "Right", 1996);
+            ScienceBook scienceBook2 = new ScienceBook("Chemistry", "Lorrie", "Right", 1998);
+
+            List<Book> bookShelf = new List<Book>();
+            bookShelf.Add(novelBook1);
+            bookShelf.Add(novelBook2);
+            bookShelf.Add(scienceBook1);
+            bookShelf.Add(scienceBook2);
+
+            foreach (var x in bookShelf) 
+            {
                 Console.WriteLine(x);
             }
         }
