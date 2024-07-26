@@ -6,6 +6,8 @@ namespace SeptintaPaskaitaCSharp.Service
     {
         public void Initialize()
         {
+            /* TASK 1 */
+            Console.WriteLine("TASK 1");
             Vehicle lambo = new Car(2, "Lamborghini", "Huracan", 500);
             Vehicle ferrari = new Car(2, "Ferrari", "F40", 360);
 
@@ -20,6 +22,19 @@ namespace SeptintaPaskaitaCSharp.Service
             luxuryVehicles.Add(harley);
 
             foreach (var x in luxuryVehicles)
+            {
+                Console.WriteLine(x);
+            }
+
+            /* TASK 2 */
+            Console.WriteLine("TASK 2");
+            Worker coder = new Programmer("Plankalkul", "John", "Wick", 99999);
+            Worker tester = new Tester(false,"Katy", "Perry", 900);
+
+            List<Worker> itTeam = new List<Worker>();
+            itTeam.Add(coder);
+            itTeam.Add(tester);
+            foreach (var x in itTeam)
             {
                 Console.WriteLine(x);
             }
